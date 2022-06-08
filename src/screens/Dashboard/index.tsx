@@ -42,8 +42,8 @@ export function Dashboard() {
      * - call addRepository function sending inputText value;
      * - clean inputText value.
      */
-    //validate that the text follows the user/repository format
-    if (inputText.match(/^[a-zA-Z0-9]+\/[a-zA-Z0-9]+$/)) {
+    //validate that the text follows the software-mansion/react-native-gesture-handler format
+    if (inputText.match(/^[a-zA-Z0-9_-]+\/[a-zA-Z0-9_-]+$/)) {
       addRepository(inputText);
       setInputText("");
       inputRef.current?.focus();
